@@ -1,0 +1,67 @@
+/* 
+* Style Author :     LoneDevWolf
+* Color Codes  :     003049, D62828, F77F00, FCBF49, EAE2B7
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eae2b7;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .logo h3 {
+  font-size: 24pt;
+}
+
+.nav .nav-btn a {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: #f77f00;
+  color: #003049;
+  text-decoration: none;
+}
+.nav .links ul {
+  list-style: none;
+  font-size: 12pt;
+  transition: all 0.8s ease-in-out;
+}
+
+.nav .links li {
+  list-style: none;
+  width: 108px;
+  padding: 4px 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.nav .links li a {
+  color: #003049;
+  text-decoration: none;
+  width: 108px;
+  margin-top: -1px;
+  font-weight: 500;
+}
+
+.nav .links li a:hover {
+  color: #f77f00;
+}
+
+.hero {
+  padding: 25px;
+}
+
+.hero h1 {
+  font-size: 34pt;
+}
