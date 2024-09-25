@@ -1,6 +1,6 @@
 /* 
 * Style Author :     LoneDevWolf
-* Color Codes  :     003049, D62828, F77F00, FCBF49, EAE2B7
+* Color Codes  :     003049(BlueLike), D62828(RedLike), F77F00(OrangeLike), FCBF49, EAE2B7
 */
 * {
   margin: 0;
@@ -14,6 +14,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Navigation Section */
+
 .nav {
   padding: 25px;
   display: flex;
@@ -23,15 +25,9 @@ body {
 
 .nav .logo h3 {
   font-size: 24pt;
+  color: #003049;
 }
 
-.nav .nav-btn a {
-  padding: 10px 15px;
-  border-radius: 20px;
-  background: #f77f00;
-  color: #003049;
-  text-decoration: none;
-}
 .nav .links ul {
   list-style: none;
   font-size: 12pt;
@@ -58,10 +54,82 @@ body {
   color: #f77f00;
 }
 
+.nav .nav-btn a {
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: #f77f00;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.nav > .nav-btn > a:hover {
+  background-color: #003049;
+}
+
+/* Hero Section */
 .hero {
   padding: 25px;
 }
 
-.hero h1 {
-  font-size: 34pt;
+.hero > h1 {
+  font-size: 30pt;
+  line-height: 1.8;
+  color: #003049;
+}
+
+.hero > p {
+  color: #003049;
+  font-weight: 300;
+  line-height: 1.8;
+  transition: all 0.8s ease-in-out;
+}
+
+.hero > .hero-btn {
+  padding: 25px 0;
+}
+
+.hero > .hero-btn > a {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10pt 45pt;
+  text-decoration: none;
+  color: #f77f00;
+  border: 2px solid #003049;
+  font-weight: 500;
+  font-size: 12pt;
+}
+
+.hero > .hero-btn > a:nth-child(1) {
+  background-color: #f77f00;
+  color: #003049;
+  border: noneS;
+}
+
+.hero > .hero-btn > a:nth-child(1):hover {
+  background-color: #003049;
+  color: #f1f1f1;
+  border: none;
+}
+
+.hero > .hero-btn > a:nth-child(2):hover {
+  background-color: #003049;
+  color: #f1f1f1;
+  border: none;
+}
+
+/* Job Titles Section */
+
+.jobTitles {
+  height: 100px;
+  padding: 25px;
+  background-color: #003049;
+  color: #eae2b7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jobTitles > p {
+  font-size: 14pt;
+  transition: all 0.8s ease-in-out;
 }
