@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Homepage</title>
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/newMain.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+    />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,52 +23,73 @@
     ></script>
   </head>
   <body>
-    <div class="nav">
-      <div class="logo">
-        <h3>Arids.</h3>
+    <!-- Navigation Section ✅-->
+    <div class="ui menu flex-container">
+      <div class="header item flex-item">
+        <h1 class="ui header">Arids.</h1>
       </div>
-      <div class="links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolios</a></li>
-          <li><a href="#">Testimonials</a></li>
-        </ul>
+      <div class="menu-links flex-item">
+        <a class="item" href="#home">Home</a>
+        <a class="item" href="#about">About</a>
+        <a class="item" href="#services">Services</a>
+        <a class="item" href="#contact">Contact</a>
       </div>
-      <div class="nav-btn">
-        <a href="#"> <i class="fa-brands fa-rocketchat"></i></a>
-      </div>
-    </div>
-
-    <div class="hero">
-      <div class="hero1">
-        <h1>
-          Hey, I'm Arids 👱, <br />A Software/Website Developer {&&} <br />A
-          Programming Language Instructor.
-        </h1>
-        <p>
-          I'm a versatile professional with expertise in software development,
-          graphic design, and penetration testing. <br />With a keen eye for
-          detail, creative problem-solving skills, and a passion for security,
-          they excel in <br />building robust, visually appealing, and secure
-          systems.
-        </p>
-        <div class="hero-btn">
-          <a href="#">Want to discuss?</a>
-          <a href="#">Let's Talk......</a>
+      <div class="right-menu flex-item">
+        <a class="item" href="#discussion">
+          <i class="comments icon"></i>
+        </a>
+        <div class="menu-toggle item">
+          <i class="bars icon"></i>
         </div>
       </div>
-      <div class="hero2">
-        <img src="./assets/heroImg2.png" alt="" />
+    </div>
+
+    <!-- Hero Section -->
+    <div class="ui hero">
+      <h3 class="right aligned">Welcome to Arids {👱}</h3>
+      <h1>I'm a Software/Website Developer + Bug Bounty Hunter</h1>
+      <p>
+        I'm a versatile professional with expertise in software development and
+        penetration testing. <br />With a keen eye for detail, creative
+        problem-solving skills, and a passion for security, they excel in
+        <br />building robust, visually appealing, and secure systems.
+      </p>
+      <div class="btn">
+        <button class="ui primary button">Want to Discuss ?</button>
+        <button class="ui button">Let's Talk...</button>
       </div>
     </div>
 
-    <div class="jobTitles">
-      <p>{🌎} Web Developer</p>
-      <p>{🎭} Graphics Designer</p>
-      <p>{🖥} Programming Instructor</p>
-      <p>{🕴} Bug Bounty Hunter</p>
+    <div class="ui container jobTitles">
+      <div class="ui three column grid">
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular code icon"></i>
+            Website Developer
+          </div>
+          <p>Check out web projects.</p>
+        </div>
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular bug icon"></i>
+            Software Development
+          </div>
+          <p>Dive in to our software programs.</p>
+        </div>
+        <div class="column">
+          <div class="ui icon header">
+            <i class="circular shield icon"></i>
+            Bug Bounty Hunter
+          </div>
+          <p>We explore vulnerabilities in your systems and network.</p>
+        </div>
+      </div>
     </div>
+
+    <!--
+
+
+  
 
     <div class="services">
       <h2>Services.</h2>
@@ -218,6 +243,15 @@
         <i class="fa-brands fa-reddit"></i>
         <i class="fa-brands fa-telegram"></i>
       </div>
-    </div>
+    </div> -->
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".menu-toggle").click(function () {
+        $(".menu-links").toggle();
+      });
+    });
+  </script>
 </html>
