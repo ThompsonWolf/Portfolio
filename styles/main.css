@@ -1,8 +1,3 @@
-/* 
-* Style Author :     LoneDevWolf
-* Color Codes  :     003049(BlueLike), D62828(RedLike), F77F00(OrangeLike), FCBF49, EAE2B7
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -10,430 +5,121 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --firstblue: #00111c;
+  --secondblue: #001523;
+  --thirdblue: #001a2c;
+  --fourthblue: #002137;
+  --fifthblue: #00253e;
+  --sixthblue: #002945;
+  --seventhblue: #002e4e;
+  --eighthblue: #003356;
+  --ninethblue: #003a61;
+  --tenthblue: #00406c;
+  --firstwhite: #edede9;
+  --secondwhite: #d6ccc2;
+  --thirdwhite: #d6ccc2;
+  --fourthwhite: #d6ccc2;
+  --fifthwhite: #d6ccc2;
+}
+
 body {
-  background-color: #eae2b7;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins;
 }
 
-/* Navigation Section */
-
-.nav {
-  padding: 25px;
+/* Navbar Styles */
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: var(--fifthblue);
+  padding: 25px 50px;
+  position: fixed;
+  width: 100%;
 }
 
-.nav .logo h3 {
-  font-size: 24pt;
-  color: #003049;
+.navbar .logo {
+  color: var(--firstwhite);
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.nav .links ul {
+.navbar ul {
   list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  padding: 10px;
+}
+
+.navbar ul li a {
+  color: var(--firstwhite);
+  text-decoration: none;
+  cursor: pointer;
   font-size: 12pt;
-  transition: all 0.8s ease-in-out;
 }
 
-.nav .links li {
-  list-style: none;
-  padding: 0px 50px;
-  text-align: center;
-  display: inline-block;
+.navbar ul li a:hover {
+  color: var(--secondwhite);
 }
 
-.nav .links li a {
-  color: #003049;
-  text-decoration: none;
-  margin-top: -1px;
-  font-weight: 600;
-  font-size: 15pt;
+header > .navbar > i {
+  color: var(--firstwhite);
 }
 
-.nav .links li a:hover {
-  color: #f77f00;
-}
-
-.nav .nav-btn a {
-  padding: 10px 15px;
-  border-radius: 20px;
-  background: #f77f00;
-  color: #f1f1f1;
-  text-decoration: none;
-}
-
-.nav > .nav-btn > a:hover {
-  background-color: #003049;
-}
-
-/* Hero Section */
+/* Hero Section Styling  */
 .hero {
-  padding: 25px;
+  padding: 50px;
+  background-color: var(--firstwhite);
+  height: 80vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.hero > .hero1 > h1 {
-  font-size: 30pt;
-  line-height: 1.8;
-  color: #003049;
-}
-
-.hero > .hero1 > p {
-  color: #003049;
-  font-weight: 300;
-  line-height: 1.8;
+  justify-content: space-between;
   transition: all 0.8s ease-in-out;
 }
 
-.hero > .hero1 > .hero-btn {
-  padding: 25px 0;
+.hero > .box1 > h1 {
+  line-height: 1.8;
+  font-size: 32pt;
+  color: var(--thirdblue);
 }
 
-.hero > .hero1 > .hero-btn > a {
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 10pt 45pt;
-  text-decoration: none;
-  color: #f77f00;
-  border: 2px solid #003049;
-  font-weight: 500;
+.hero > .box1 > p {
   font-size: 12pt;
 }
 
-.hero > .hero1 > .hero-btn > a:nth-child(1) {
-  background-color: #f77f00;
-  color: #003049;
-  border: noneS;
+.hero > .box1 > .btn {
+  margin: 15px 0;
 }
-
-.hero > .hero1 > .hero-btn > a:nth-child(1):hover {
-  background-color: #003049;
-  color: #f1f1f1;
-  border: none;
-}
-
-.hero > .hero1 > .hero-btn > a:nth-child(2):hover {
-  background-color: #003049;
-  color: #f1f1f1;
-  border: none;
-}
-
-/* Job Titles Section */
-
-.jobTitles {
-  height: 100px;
-  padding: 25px;
-  background-color: #003049;
-  color: #eae2b7;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.jobTitles > p {
-  font-size: 14pt;
-  transition: all 0.8s ease-in-out;
-}
-
-/* Services Section */
-.services {
-  padding: 25px;
-}
-
-.services > h2 {
-  padding-top: 30px;
-  font-size: 30pt;
-  text-align: center;
-}
-
-.services > p {
-  font-weight: bold;
-  font-size: 14pt;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.service-container {
-  display: grid;
-  gap: 35px;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  padding-bottom: 15px;
-}
-
-.service-container > .service1,
-.service2,
-.service3,
-.service4,
-.service5,
-.service6 {
-  border: 2px solid #003049;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 22em;
-  height: 5em;
+.hero > .box1 > .btn > button {
   padding: 15px;
+  cursor: pointer;
+  color: var(--firstwhite);
+  font-weight: bold;
+  background-color: var(--fifthblue);
+  border: none;
   border-radius: 5px;
-  background-color: #e0dada;
+}
+
+.hero > .box1 > .btn > button:hover {
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--fifthblue);
+  background-color: var(--secondwhite);
   border: none;
-  font-weight: 600;
-}
-
-.services > p > a {
-  text-align: center;
-  text-decoration: none;
-  padding: 5px 25px;
-  border-radius: 25px;
-  background-color: #f77f00;
-  color: #f1f1f1;
-  font-size: 10pt;
-  font-weight: 800;
-}
-
-.services > p > a:hover {
-  background-color: #003049;
-}
-
-/* Portfolios Secion */
-.portfolios {
-  padding: 25px;
-  background-color: #003049;
-  color: #f1f1f1;
-}
-
-.portfolios > h2 {
-  padding-top: 30px;
-  font-size: 30pt;
-  text-align: center;
-}
-
-.portfolios > p {
-  font-weight: bold;
-  font-size: 14pt;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.portfolios > .portfolio-container {
-  display: grid;
-  gap: 35px;
-  grid-template-columns: auto auto auto;
-  justify-content: space-around;
-  padding-bottom: 15px;
-}
-
-.portfolio-container > .portfolio1,
-.portfolio2,
-.portfolio3,
-.portfolio4,
-.portfolio5,
-.portfolio6 {
-  width: 22em;
-  padding: 40px;
   border-radius: 5px;
-  font-weight: 400;
 }
 
-/* Portfolio 1 Styling */
-.portfolio-container > .portfolio1 > img {
-  padding-bottom: 15px;
-}
-
-.portfolio-container > .portfolio1 > .title {
-  font-weight: bold;
-  font-size: 15pt;
-  padding: 35px 0;
-}
-
-.portfolio-container > .portfolio1 > p {
-  padding-bottom: 50px;
-}
-
-/* Portfolio 2 Styling */
-.portfolio-container > .portfolio2 > img {
-  padding-bottom: 15px;
-}
-
-.portfolio-container > .portfolio2 > .title {
-  font-weight: bold;
-  font-size: 15pt;
-  padding: 35px 0;
-}
-
-.portfolio-container > .portfolio2 > p {
-  padding-bottom: 50px;
-}
-
-/* Portfolio 3 Styling */
-.portfolio-container > .portfolio3 > img {
-  padding-bottom: 15px;
-}
-
-.portfolio-container > .portfolio3 > .title {
-  font-weight: bold;
-  font-size: 15pt;
-  padding: 35px 0;
-}
-
-.portfolio-container > .portfolio3 > p {
-  padding-bottom: 50px;
-}
-
-/* Portfolio 4 Styling */
-.portfolio-container > .portfolio4 > img {
-  padding-bottom: 15px;
-}
-
-.portfolio-container > .portfolio4 > .title {
-  font-weight: bold;
-  font-size: 15pt;
-  padding: 35px 0;
-}
-
-.portfolio-container > .portfolio4 > p {
-  padding-bottom: 50px;
-}
-
-/* Portfolio 5 Styling */
-.portfolio-container > .portfolio5 > img {
-  padding-bottom: 15px;
-}
-
-.portfolio-container > .portfolio5 > .title {
-  font-weight: bold;
-  font-size: 15pt;
-  padding: 35px 0;
-}
-
-.portfolio-container > .portfolio5 > p {
-  padding-bottom: 50px;
-}
-
-/* Portfolio 6 Styling */
-.portfolio-container > .portfolio6 > img {
-  padding-bottom: 15px;
-  visibility: hidden;
-}
-
-.portfolio-container > .portfolio6 > .title {
-  font-weight: bold;
-  font-size: 15pt;
-  padding: 35px 0;
-}
-
-.portfolio-container > .portfolio6 > p {
-  padding-bottom: 50px;
-}
-
-/* Testimonials Section */
-
-.testimonials {
-  padding: 25px;
-}
-
-.testimonials > h2 {
-  padding-top: 30px;
-  font-size: 30pt;
-  text-align: center;
-}
-
-.testimonials > p {
-  font-weight: bold;
-  font-size: 14pt;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.testimonials > .testimonial-container {
+.iconBox {
   display: flex;
-  align-items: center;
+  width: 25%;
   justify-content: space-between;
-  padding: 2em 0;
+  margin: 15px 0;
 }
 
-.testimonial-container > .testimonial1,
-.testimonial2,
-.testimonial3 {
-  text-align: center;
-  padding: 15px;
-}
-
-.testimonial-container > .testimonial1 > p {
-  line-height: 1.5;
-  padding: 15px;
-}
-
-.testimonial-container > .testimonial2 > p {
-  line-height: 1.5;
-  padding: 15px;
-}
-
-.testimonial-container > .testimonial3 > p {
-  line-height: 1.5;
-  padding: 15px;
-}
-
-.testimonial-container > .testimonial1 > .testimonial-name {
-  font-weight: bold;
-}
-
-.testimonial-container > .testimonial2 > .testimonial-name {
-  font-weight: bold;
-}
-
-.testimonial-container > .testimonial3 > .testimonial-name {
-  font-weight: bold;
-}
-
-.testimonial-container > .testimonial1 > i {
-  background-color: #003049;
-  border-radius: 50%;
-  padding: 100px 50px;
-  height: 200px;
-  width: 200px;
-  font-size: 48pt;
-  text-align: center;
-}
-
-.testimonial-container > .testimonial2 > i {
-  background-color: #003049;
-  border-radius: 50%;
-  padding: 100px 50px;
-  height: 200px;
-  width: 200px;
-  font-size: 48pt;
-  text-align: center;
-}
-
-.testimonial-container > .testimonial3 > i {
-  background-color: #003049;
-  border-radius: 50%;
-  padding: 100px 50px;
-  height: 200px;
-  width: 200px;
-  font-size: 48pt;
-  text-align: center;
-}
-
-.footer {
-  padding: 25px;
-  background-color: #003049;
-  color: #f1f1f1;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.footer > .links {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.footer > .links > i {
-  padding: 0 30px;
-  font-size: 20pt;
+.box > i {
+  font-size: 18pt;
 }
