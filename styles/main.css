@@ -150,32 +150,6 @@ header > .navbar > i {
   font-size: 18pt;
 }
 
-.brandContainer {
-  padding: 20px;
-}
-
-.brandContainer > .imagesContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0;
-  transition: all 0.8s ease-in-out;
-}
-
-.brandContainer > .brand-title {
-  text-align: center;
-  font-size: 18pt;
-  font-weight: 600;
-  color: var(--thirdblue);
-  line-height: 1.8;
-  text-transform: capitalize;
-  /* padding: 10px; */
-}
-
-.brandContainer > .imagesContainer > img {
-  width: 5%;
-}
-
 .slideContainer {
   padding: 25px;
 }
@@ -265,7 +239,7 @@ header > .navbar > i {
 
 /* [=================================================Responsiveness (Mobile Devices)=========================================================================] */
 /* Mobile devices */
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .navbar > ul {
     display: none;
   }
@@ -302,8 +276,3 @@ header > .navbar > i {
 }
 
 /* [=================================================Responsiveness (Tablets Devices)=========================================================================] */
-/* Tablets */
-@media (min-width: 481px) and (max-width: 768px) {
-  /* Styles for screens between 481px and 768px wide */
-}
-
