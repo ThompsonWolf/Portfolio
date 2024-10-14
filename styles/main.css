@@ -239,7 +239,52 @@ header > .navbar > i {
 
 /* [=================================================Responsiveness (Mobile Devices)=========================================================================] */
 /* Mobile devices */
-@media (min-width: 481px) and (max-width: 767px) {
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar > ul {
+    display: none;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .heroContainer {
+    padding: 15px;
+  }
+
+  .hero > .box1 {
+    flex-direction: column;
+    padding: 10px 15px;
+    background-color: var(--firstwhite);
+    transition: all 0.8s ease-in-out;
+    border-radius: 15px;
+  }
+
+  .hero > .box1 > h3 {
+    font-size: 8pt;
+  }
+  .hero > .box1 > h1 {
+    line-height: 1.8;
+    font-size: 18pt;
+    color: var(--thirdblue);
+  }
+
+  .hero > .box1 > p {
+    font-size: 10pt;
+  }
+
+  .hero > .box2 {
+    display: none;
+  }
+
+  .iconBox {
+    width: 50%;
+  }
+}
+
+/* [=================================================Responsiveness (Tablets Devices)=========================================================================] */
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar > ul {
     display: none;
   }
@@ -274,5 +319,9 @@ header > .navbar > i {
     width: 50%;
   }
 }
-
-/* [=================================================Responsiveness (Tablets Devices)=========================================================================] */
+@media (min-width: 320px) and (max-width: 480px) {
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+}
+@media (max-width: 1600px) {
+}
